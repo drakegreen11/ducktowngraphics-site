@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ducktown Graphics</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap">
+<style>
+/* Layout: one narrow reading column, a slim masthead band, plain numbered-free sections */
+:root {
+  --bg: #f3f4f1;
+  --paper: #fbfbf9;
+  --ink: #1d2422;
+  --muted: #56615d;
+  --rule: #d5dad6;
+  --accent: #2f6b5e;
+  --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --body: "Literata", Georgia, "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141917; --paper: #1a201e; --ink: #e5ebe8; --muted: #a2aeaa; --rule: #2e3835; --accent: #7fc0ae;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141917; --paper: #1a201e; --ink: #e5ebe8; --muted: #a2aeaa; --rule: #2e3835; --accent: #7fc0ae;
+  color-scheme: dark;
+}
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--body);
+  font-size: 1.0625rem; line-height: 1.65;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 40px 64px;
+}
+main {
+  max-width: 40rem; margin: 0 auto; background: var(--paper);
+  border: 1px solid var(--rule); border-radius: 6px;
+  padding: clamp(24px, 5vw, 48px);
+}
+.eyebrow {
+  font-family: var(--display); font-weight: 500; font-size: 0.75rem;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin: 0;
+}
+h1 {
+  font-family: var(--display); font-weight: 700; font-size: clamp(1.75rem, 4.5vw, 2.25rem);
+  line-height: 1.15; margin: 0.35em 0 0.2em; text-wrap: balance;
+}
+.meta { color: var(--muted); font-size: 0.9375rem; margin: 0 0 2rem; }
+h2 {
+  font-family: var(--display); font-weight: 700; font-size: 1.125rem;
+  margin: 2rem 0 0.4rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); text-wrap: balance;
+}
+p, li { margin: 0 0 0.85rem; }
+ul { padding-left: 1.2rem; margin: 0 0 0.85rem; }
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+code { font-size: 0.9em; overflow-wrap: anywhere; }
+</style>
+
+</head>
+<body>
+<main>
+  <p class="eyebrow">Ducktown Graphics</p>
+  <h1>Surreal and moody printable wall art</h1>
+  <p>Ducktown Graphics is an independent digital art shop. Every design is sold as an instant download in poster, landscape and square print sizes.</p>
+  <p><a href="https://ducktowngraphics.etsy.com/">Visit the shop on Etsy</a></p>
+  <h2>Policies</h2>
+  <p><a href="privacy.html">Ducktown Pin Scheduler privacy policy</a></p>
+</main>
+</body>
+</html>
